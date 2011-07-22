@@ -1,0 +1,99 @@
+/* Your Css for Resource */
+
+html, body{
+	
+}
+
+/* typography */
+
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #444;
+}
+
+a:hover{
+	color: #999;
+}
+
+/* structure */
+
+#container{
+	position: relative;
+	margin: 100px auto;
+	width: 400px;
+}
+
+#disk{
+	width: 250px;
+	height: 250px;
+	border-radius: 200px;
+	background-color: #555;
+  	background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0.26, rgb(0,0,0)),color-stop(0.51, rgb(53,53,54)),color-stop(0.82, rgb(0,0,0)));
+  	background-image:    -moz-linear-gradient(left bottom,rgb(0,0,0) 26%,rgb(53,53,54) 51%,rgb(0,0,0) 82%,);
+  	background-image:     -ms-linear-gradient(top, #555, #111); /* IE10 */
+  	background-image:      -o-linear-gradient(top, #555, #111); /* Opera 11.10+ */
+  	background-image:         linear-gradient(top, #555, #111);
+	z-index: 1;
+	padding-top: 150px;
+	padding-left: 150px;
+	-webkit-transition: -webkit-transform 30s ease-in-out;
+    -moz-transition: -moz-transform 30s ease-in-out;
+    -o-transition: -o-transform 30s ease-in-out;
+    box-shadow: 0 0 5px #222;
+}
+
+#disk.active{
+	-webkit-transform: rotate(3600deg);
+    -moz-transform: rotate(3600deg);
+    -o-transform: rotate(3600deg);
+}
+
+#pointer{
+	width: 100px;
+	height: 60px;
+	border-radius: 50px;
+	z-index: 10;
+	display: block;
+	padding-top: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 11px;
+	background: #ececec;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ececec), to(#dedede));
+	background-image: -webkit-linear-gradient(top, #ececec, #dedede);
+	background-image:    -moz-linear-gradient(top, #ececec, #dedede);
+	background-image:     -ms-linear-gradient(top, #ececec, #dedede);
+	background-image:      -o-linear-gradient(top, #ececec, #dedede);
+	background-image:         linear-gradient(top, #ececec, #dedede);
+	box-shadow: inset 0 0 5px #222;
+}
+
+.play{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.play a{
+	border-radius: 25px;
+	border: 1px solid #999;
+	background-color: #ececec;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ececec), to(#dedede));
+	background-image: -webkit-linear-gradient(top, #ececec, #dedede);
+	background-image:    -moz-linear-gradient(top, #ececec, #dedede);
+	background-image:     -ms-linear-gradient(top, #ececec, #dedede);
+	background-image:      -o-linear-gradient(top, #ececec, #dedede);
+	background-image:         linear-gradient(top, #ececec, #dedede);
+	padding: 13px 30px;
+}
+
+.play a:active{
+	background-color: #ececec;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#ececec));
+	background-image: -webkit-linear-gradient(top, #dedede, #ececec);
+	background-image:    -moz-linear-gradient(top, #dedede, #ececec);
+	background-image:     -ms-linear-gradient(top, #dedede, #ececec);
+	background-image:      -o-linear-gradient(top, #dedede, #ececec);
+	background-image:         linear-gradient(top, #dedede, #ececec);
+}
